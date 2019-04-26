@@ -11,17 +11,16 @@ public class CapitalActivity extends AppCompatActivity {
     private TextView tvCapital;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_capital);
-        TextView tvCapital= findViewById(R.id.tvCapital);
+        TextView tvCapital = findViewById(R.id.tvCapital);
 
-        Bundle bundle=getIntent().getExtras();
-        if (bundle!=null){
-            String capital=bundle.getString("capital");
-            tvCapital=findViewById(R.id.tvCapital);
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
+            String capital = bundle.getString("capital");
+            tvCapital = findViewById(R.id.tvCapital);
             tvCapital.setText(capital);
         }
     }

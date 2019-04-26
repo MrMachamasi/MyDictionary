@@ -9,16 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CapitalActivity"></activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="My Happy Dictionary">
+        <activity android:name=".Dashboard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AddWord">
+
+        </activity>
+        <activity android:name=".CapitalActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="My Happy Dictionary"></activity>
     </application>
 
 </manifest>

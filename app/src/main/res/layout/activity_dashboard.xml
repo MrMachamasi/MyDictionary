@@ -4,19 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Dashboard">
 
 
-    <ListView
-        android:id="@+id/myList"
+
+    <Button
+        android:id="@+id/btndisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Dispaly country"
+        />
 
 
-        >
-
-
-    </ListView>
-
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Country"/>
 
 </LinearLayout>
